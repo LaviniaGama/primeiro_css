@@ -1,0 +1,34 @@
+h1 {
+    color: crimson;
+}
+
+.portugues {
+    color: aquamarine;
+}
+
+#espanhol {
+    color: blueviolet;
+}
+
+.display {
+    background-color: rgb(193, 235, 255);
+    padding: 50px;
+    width: 50%;
+}
+
+.display-blue {
+    background-color: rgb(255, 200, 227);
+    padding: 50px;
+    width: 50%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.row {
+    background-color: cornflowerblue;
+    text-align: center;
+}
