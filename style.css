@@ -1,34 +1,64 @@
 h1 {
-    color: crimson;
+    color:brown;
 }
 
 .portugues {
-    color: aquamarine;
+    color:blue;
 }
 
 #espanhol {
-    color: blueviolet;
+    color:blueviolet;
 }
 
 .display {
-    background-color: rgb(193, 235, 255);
+    background-color: aqua;
     padding: 50px;
-    width: 50%;
+    width: 70%;
 }
 
 .display-blue {
-    background-color: rgb(255, 200, 227);
+    background-color: navajowhite;
     padding: 50px;
-    width: 50%;
+    width: 30%
 }
+
+.display-red {
+    background-color: aquamarine;
+    padding: 50px;
+    width: 30%
+}
+
 
 .flex {
     display: flex;
     flex-direction: row;
-    text-align: center;
 }
 
 .row {
-    background-color: cornflowerblue;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.row3 {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.row4 {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.row5 {
+    background-color: antiquewhite;
+    text-align: center;
+}
+.row6 {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.row7 {
+    background-color: antiquewhite;
     text-align: center;
 }
