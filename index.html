@@ -1,53 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS</title>
     <link rel="stylesheet" href="./style.css">
+
 </head>
+
 <body>
-
     <div class="flex">
-        <div class="display"> 
-            <h1>Função somar</h1>
-            <input type="text" id="1" placeholder="digite um número">
-            <input type="text" id="2" placeholder="digite outro número">
-            <h2 id="resultado"></h2>
-            <button onclick="somar()">somar</button>
+
+        <div class="display">
+            <h1>Digite um numero</h1>
+            <input type="text" id = "1" placeholder="digite aqui"></input>
+            <input type="text" id = "2" placeholder="digite outro numero"></input>
+            <h2 id="./resultado"></h2>
+            <button onclick="somar()">somar</buttton>
         </div>
 
-        <div class="display-blue"> 
-            <h1>Função subtrair</h1>
-            <input type="text" id="1" placeholder="digite um número">
-            <input type="text" id="2" placeholder="digite outro número">
-            <h2 id="resultado"></h2>
-            <button onclick="subtrair()">subtrair</button>
+        <div class="display-blue">
+            <h1>Digite um numero</h1>
+             <input type="text" id = "3" placeholder="digite aqui"></input>
+            <input type="text" id = "4" placeholder="digite outro numero"></input>
+            <h2 id="./resultado2"></h2>
+            <button onclick="multiplicar()">multiplicar</buttton>
         </div>
 
-        <div class="display-blue"> 
-            <h1>Função multiplicar</h1>
-            <input type="text" id="1" placeholder="digite um número">
-            <input type="text" id="2" placeholder="digite outro número">
-            <h2 id="resultado"></h2>
-            <button onclick="subtrair()">subtrair</button>
+        <div class="display-red">
+            <h1>Digite um numero</h1>
+            <input type="text" id = "5" placeholder="digite aqui"></input>
+            <input type="text" id = "6" placeholder="digite outro numero"></input>
+            <h2 id="./resultado3"></h2>
+            <button onclick="subtrair()">subtrair</buttton>
+            
         </div>
 
-   
-        <div class="display"> 
-            <h1>hello</h1>
-            <h1 class="portugues">Oi</h1>
-            <h1 id="espanhol">Hola</h1>
-        </div>
+    </div>
 
-        <div class="row"> 
-            <h1>hello</h1>
-            <h1 class="portugues">Oi</h1>
-            <h1 id="espanhol">Hola</h1>
-        </div>
+    <div class="row">
+      <h1>Triângulo</h1>
+            <input type="text" id = "7" placeholder="digite aqui"></input>
+            <input type="text" id = "8" placeholder="digite outro numero"></input>
+            <h2 id="./resultado4"></h2>
+            <button onclick="area()">triangulo</buttton>
+    </div>
+
+      <div class="row3">
+      <h1>Quadrado</h1>
+            <input type="text" id = "9" placeholder="digite aqui"></input>
+            <h2 id="./resultado5"></h2>
+            <button onclick="quadrado()">quadrado</buttton>
+    </div>
+
+     <div class="row4">
+      <h1>Retângulo</h1>
+            <input type="text" id = "10" placeholder="base"></input>
+            <input type="text" id = "11" placeholder="altura"></input>
+            <h2 id="./resultado6"></h2>
+            <button onclick="retangulo()">retangulo</buttton>
+    </div>
+
+    <div class="row5">
+      <h1>Trapézio</h1>
+            <input type="text" id = "12" placeholder="base maior"></input>
+            <input type="text" id = "13" placeholder="base menor"></input>
+            <input type="text" id = "14" placeholder="altura"></input>
+            <h2 id="./resultado7"></h2>
+            <button onclick="trapezio()">trapezio</buttton>
+    </div>
+
+    <div class="row6">
+      <h1>Losango</h1>
+            <input type="text" id = "15" placeholder="diagonal maior"></input>
+            <input type="text" id = "16" placeholder="diagonal menor"></input>
+            <input type="text" id = "17" placeholder="altura"></input>
+            <h2 id="./resultado8"></h2>
+            <button onclick="losangulo()">losangulo</buttton>
+    </div>
+
+    <div class="row7">
+      <h1>Losango</h1>
+            <input type="text" id = "18" placeholder="diagonal maior"></input>
+            <input type="text" id = "19" placeholder="diagonal menor"></input>
+            <input type="text" id = "20" placeholder="altura"></input>
+            <h2 id="./resultado8"></h2>
+            <button onclick="losangulo()">losangulo</buttton>
     </div>
     
+    <div class="row">
+        <h1>Círculo</h1>
+        <input type="number" id="raio-circ" placeholder="raio (r)" step="any">
+        <h2 id="resultado-circ"></h2>
+        <button onclick="areaCirculo()">Calcular área</button>
+    </div>
+
+    <div class="row">
+        <h1>Setor Circular</h1>
+        <input type="number" id="raio-setor" placeholder="raio (r)" step="any">
+        <input type="number" id="angulo-setor" placeholder="ângulo central (graus)" step="any">
+        <h2 id="resultado-setor"></h2>
+        <button onclick="areaSetorCircular()">Calcular área</button>
+    </div>
+
+    <div class="row">
+        <h1>Coroa Circular</h1>
+        <input type="number" id="raio-maior-coroa" placeholder="raio maior (R)" step="any">
+        <input type="number" id="raio-menor-coroa" placeholder="raio menor (r)" step="any">
+        <h2 id="resultado-coroa"></h2>
+        <button onclick="areaCoroaCircular()">Calcular área</button>
+    </div>
+
+    <div class="row">
+        <h1>Elipse</h1>
+        <input type="number" id="semieixo-maior" placeholder="semieixo maior (a)" step="any">
+        <input type="number" id="semieixo-menor" placeholder="semieixo menor (b)" step="any">
+        <h2 id="resultado-elipse"></h2>
+        <button onclick="areaElipse()">Calcular área</button>
+    </div>
+
+    <div class="row">
+        <h1>Paralelogramo</h1>
+        <input type="number" id="base-para" placeholder="base (b)" step="any">
+        <input type="number" id="altura-para" placeholder="altura perpendicular (h)" step="any">
+        <h2 id="resultado-para"></h2>
+        <button onclick="areaParalelogramo()">Calcular área</button>
+    </div>
+
+    <div class="row">
+        <h1>Polígono Regular</h1>
+        <input type="number" id="perimetro-pol" placeholder="perímetro total (p)" step="any">
+        <input type="number" id="apotema-pol" placeholder="apótema (a)" step="any">
+        <h2 id="resultado-pol"></h2>
+        <button onclick="areaPoligonoRegular()">Calcular área</button>
+    </div>
+
 </body>
-<script>src="./script.js"</script>
+<script src ="./script.js"></script>
 </html>
 
